@@ -1,11 +1,10 @@
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "开发成长手册",
-  description: "",
+  title: '开发成长手册',
+  description: '',
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -19,20 +18,19 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: 'Runtime API Examples', link: '/api-examples' },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present Ardans'
+      copyright: 'Copyright © 2024-present Ardans',
     },
-
 
     search: {
       provider: 'local',
@@ -51,8 +49,8 @@ export default defineConfig({
             },
           },
         },
-      }
-    }
+      },
+    },
   },
   head: [
     [
@@ -88,11 +86,11 @@ export default defineConfig({
     ['meta', { name: 'color-scheme', content: 'dark light' }],
   ],
   vite: {
-    plugins: [UnoCSS()]
+    plugins: [UnoCSS()],
   },
-  markdown : {
+  markdown: {
     image: {
-      lazyLoading: true
-    }
-  }
+      lazyLoading: true,
+    },
+  },
 })
